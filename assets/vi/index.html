@@ -1,0 +1,1618 @@
+
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<!-- Mirrored from 200tron.com/vi/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Aug 2020 10:39:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <title>200Tron</title>
+    <link rel="stylesheet" href="../static/css/libs30f4.css?v=3">
+    <link rel="stylesheet" href="../static/css/style0e34.css?v=33">
+    <link rel="stylesheet" href="../static/css/app415a.css?v=339">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="../static/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="page">
+
+    
+
+<header class="header container">
+    <div class="header__inner container-inner">
+        <a href="index.html"
+           class="header__logo">
+            <img src="../static/img/logo3860.png?v=1"
+                 alt="logo">
+        </a>
+
+        <ul class="header__menu-list">
+            <li class="header__menu-item">
+                <a href="#" @click.prevent="scroll_to_how" class="header__menu-link">Làm thế nào nó hoạt động</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#" data-modal-open="faq" class="header__menu-link">FAQ</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="#" data-modal-open="partners"
+                   class="header__menu-link">giới thiệu</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="https://tronscan.org/#/contract/THt48vA9L8BiC3SdwNXMt7q4bWk2s2UWjm" target="_blank"
+                   class="header__menu-link">Hợp đồng</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="referral_contest.html" class="header__menu-link_new"><img src="../static/img/gift_icon.svg" alt="">cuộc thi</a>
+            </li>
+        </ul>
+
+        <div class="header__nav-bar">
+            <div class="header__nav-bar-item socials">
+                <div class="socials__inner">
+                    <a href="https://t.me/tron_200" target="_blank" class="socials__item">
+                        <img src="../static/img/svg/telegram.svg" style="margin-left: -.1rem" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__nav-bar-item lang-select" data-modal-open="lang">
+                <a href="#" class="lang-select__btn">
+                    <img src="../static/img/flags/vi.png" alt="vi">
+                </a>
+            </div>
+        </div>
+
+        <div class="header__user user">
+            <button type="button"
+                    class="user__btn" data-modal-open="auth" v-if="!user">
+        <span class="user__btn-ico">
+          <svg>
+            <use xlink:href="../static/img/svg/sprite.svg#ico-user"></use>
+          </svg>
+        </span>
+                <span class="user__btn-text">đăng nhập</span>
+            </button>
+            <template v-else>[user_login]</template>
+        </div>
+
+        <!--new-->
+        <button type="button"
+                class="header__btn-menu d-none d-md-inline-flex">
+            <svg class="burger">
+                <use xlink:href="../static/img/svg/sprite.svg#ico-burger"></use>
+            </svg>
+            <svg class="close">
+                <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+            </svg>
+        </button>
+        <!--end new-->
+    </div>
+
+    <!--new-->
+    <div class="header__mob-menu d-none d-md-block">
+        <div class="header__mob-menu-inner">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a href="#" data-modal-open="faq" class="header__menu-link">FAQ</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#"
+                       class="header__menu-link">Làm thế nào nó hoạt động</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#" data-modal-open="partners"
+                       class="header__menu-link">giới thiệu</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="https://tronscan.org/#/contract/THt48vA9L8BiC3SdwNXMt7q4bWk2s2UWjm" target="_blank"
+                       class="header__menu-link">Hợp đồng</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="referral_contest.html" class="header__menu-link_new"><img src="../static/img/gift_icon.svg" alt="">cuộc thi</a>
+                </li>
+            </ul>
+            <div class="header__nav-bar d-none d-xs-flex">
+                <div class="header__nav-bar-item socials">
+                    <div class="socials__inner">
+                        <a href="https://t.me/tron_200" target="_blank" class="socials__item">
+                            <img src="../static/img/svg/telegram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header__nav-bar-item lang-select" data-modal-open="lang">
+                    <a href="#"
+                       class="lang-select__btn">
+                        <img src="../static/img/flags/vi.png" alt="vi">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end new-->
+</header>
+
+    <main class="page__content" v-cloak>
+        <section class="first-block">
+            <div class="first-block__inner">
+                <div class="first-block__top container">
+                    <div class="first-block__top-inner container-inner">
+
+                        <div class="first-block__info " style="margin-right: auto; margin-left: initial;">
+                            <div class="first-block__info-item" style="margin-right: 0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.0711 2.92895C15.1823 1.0402 12.6711 0 10 0C7.32891 0 4.81766 1.0402 2.92891 2.92895C1.04016 4.8177 0 7.32891 0 10C0 12.6711 1.04016 15.1823 2.92891 17.0711C4.81766 18.9598 7.32891 20 10 20C12.6711 20 15.1823 18.9598 17.0711 17.0711C18.9598 15.1823 20 12.6711 20 10C20 7.32891 18.9598 4.81766 17.0711 2.92895ZM10 18.0372C5.56824 18.0372 1.96281 14.4317 1.96281 10C1.96281 9.99273 1.96305 9.98555 1.96309 9.97836C1.96309 9.97652 1.96281 9.97477 1.96281 9.97293C1.96281 9.96984 1.9632 9.96688 1.96328 9.96383C1.98277 5.5852 5.52133 2.02281 9.89078 1.96422C9.89992 1.96379 9.90898 1.96285 9.91824 1.96285C9.92379 1.96285 9.92918 1.96352 9.93469 1.96367C9.95648 1.96352 9.9782 1.96285 10 1.96285C14.4318 1.96285 18.0372 5.56832 18.0372 10C18.0372 14.4318 14.4318 18.0372 10 18.0372Z"
+                                          fill="#43C5B6"/>
+                                    <path d="M16.105 10.4827C15.7782 10.4827 15.5133 10.2177 15.5133 9.89094C15.5133 9.56414 15.7782 9.29922 16.105 9.29922H16.8183C16.4833 6.015 13.8198 3.40965 10.51 3.16504V3.78594C10.51 4.11273 10.2451 4.37766 9.91827 4.37766C9.59148 4.37766 9.32655 4.11273 9.32655 3.78594V3.17918C6.06577 3.49871 3.46839 6.11285 3.17452 9.38098H3.81327C4.14007 9.38098 4.40499 9.6459 4.40499 9.9727C4.40499 10.2995 4.14007 10.5644 3.81327 10.5644H3.16968C3.44175 13.8852 6.0912 16.5427 9.40835 16.8278V16.0777C9.40835 15.7509 9.67327 15.4859 10.0001 15.4859C10.3269 15.4859 10.5918 15.7509 10.5918 16.0777V16.8278C13.9361 16.5404 16.6017 13.8414 16.8366 10.4827H16.105ZM12.3954 8.44133L10.4185 10.4182C10.3075 10.5292 10.1571 10.5916 10.0001 10.5916C9.84319 10.5916 9.69265 10.5292 9.58171 10.4182L6.14058 6.97711C5.90948 6.74605 5.90948 6.37141 6.14058 6.14031C6.37163 5.90922 6.74628 5.90922 6.97737 6.14031L10.0001 9.16305L11.5587 7.60453C11.7897 7.37344 12.1644 7.37344 12.3955 7.60453C12.6265 7.83559 12.6265 8.21027 12.3954 8.44133Z"
+                                          fill="#43C5B6"/>
+                                </svg>
+
+                                <span>ngày làm việc: <b>9</b></span>
+                            </div>
+                        </div>
+                        <div class="first-block__info  d-sm-none">
+                            <div class="first-block__info-item">
+                                <svg>
+                                    <use xlink:href="../static/img/svg/sprite.svg#ico-user-round"></use>
+                                </svg>
+                                <span>các nhà đầu tư: <b>9399</b></span>
+                            </div>
+                            <div class="first-block__info-item">
+                                <svg>
+                                    <use xlink:href="../static/img/svg/sprite.svg#ico-dollar-round"></use>
+                                </svg>
+                                <span>tổng vốn đầu tư: <b>6078971 TRX</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-block__carousel">
+                    <div class="first-block__carousel-list">
+                        
+<div class="first-block__slide container">
+    <div class="first-block__slide-inner container-inner">
+        <div class="first-block__content">
+            <h2 class="first-block__title">smart investments</h2>
+            <div class="first-block__btn-row">
+                <button type="button" class="first-block__btn btn-big d-sm-none" @click="scroll_to">
+                    <i class="btn-big__icon icon-round icon-round--invest"></i>
+                    <span class="btn-big__text">Invest now</span>
+                </button>
+
+                <div class="first-block__percents">
+                    <strong class="m-fz45">20<b>%</b></strong>
+                    <span>ROI hàng ngày</span>
+                </div>
+            </div>
+            <div class="first-block__btn-row">
+                <button type="button" class="first-block__btn btn-big d-sm-none" data-modal-open="calc">
+                    <i class="btn-big__icon icon-round icon-round--calc"></i>
+                    <span class="btn-big__text">máy tính</span>
+                </button>
+
+                <div class="first-block__percents">
+                    <strong class="m-fz30">7<b>%</b> + 3<b>%</b></strong>
+                    <span>phần thưởng giới thiệu</span>
+                </div>
+            </div>
+            <div class="first-block__btn-row sm-show">
+                <br>
+                <button type="button" class="first-block__btn btn-big sm-w100" @click="scroll_to">
+                    <i class="btn-big__icon icon-round icon-round--invest"></i>
+                    <span class="btn-big__text">Invest now</span>
+                </button>
+            </div>
+
+            <div class="first-block__btn-row sm-show">
+                <button type="button" class="first-block__btn btn-big  sm-w100" data-modal-open="calc">
+                    <i class="btn-big__icon icon-round icon-round--calc"></i>
+                    <span class="btn-big__text">máy tính</span>
+                </button>
+            </div>
+
+
+            <div class="first-block__text text">
+                <p>
+                    <b style="font-size: 2rem">200 % chỉ trong 10 ngày</b>
+                    <br>
+                    200tron.com - quỹ đầu tư phi tập trung với hợp đồng thông minh mở
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+        <div class="slider m-none d-md-none">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="first-block__image2 swiper-slide">
+                        <img src="../static/img/slider_lang.png" style="top: 2rem; position: relative; width: 51rem; max-width: 51rem; right: 0" alt="smart contract investments">
+                    </div>
+
+
+
+
+
+
+                    <div class="first-block__image2 swiper-slide">
+                        <img src="../static/img/svg/first-block-image.svg" style="opacity: 0" alt="smart contract investments">
+                        <div class="first-block__image__animate">
+                            <img src="../static/img/trone_shadow.png" alt="smart contract investments">
+                            <img src="../static/img/trone.png" alt="smart contract investments">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<section class="investments container">
+    <div class="investments__inner container-inner">
+        <h2 class="investments__title">ĐẦU TƯ</h2>
+        <div class="investments__wrap">
+            <div class="investments__head">
+                <div class="investments__head-wallet">
+                    <svg>
+                        <use xlink:href="../static/img/svg/sprite.svg#ico-invest"></use>
+                    </svg>
+                    <div class="investments__head-cell">
+                        <div class="investments__head-cell-label">ví của bạn</div>
+                        <div class="investments__head-cell-value" v-if="user">[user_login]</div>
+                        <!-- if not logged-->
+                        <button type="button" v-else class="investments__login-btn" data-modal-open="auth">Đăng nhập</button>
+                        <!-- if logged -->
+                    </div>
+                </div>
+                <div class="investments__head-info">
+                    <div class="investments__head-info-list">
+                        <div class="investments__head-cell">
+                            <div class="investments__head-cell-label">tổng vốn đầu tư</div>
+                            <div class="investments__head-cell-value">[total_invested] TRX</div>
+                        </div>
+                        <div class="investments__head-cell">
+                            <div class="investments__head-cell-label">ổng số chi trả</div>
+                            <div class="investments__head-cell-value">[parseFloat(total_paid).toFixed(2)] TRX</div>
+                        </div>
+                        <div class="investments__head-cell">
+                            <div class="investments__head-cell-label">phần thưởng giới thiệu</div>
+                            <div class="investments__head-cell-value" v-if="referal_stat.level1">[parseFloat((referal_stat.level1.amount + referal_stat.level2.amount)/1000000).toFixed(2)] TRX</div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="investments__content">
+                <div class="investments__content-head">
+                    <div class="investments__status">Đầu tư tích cực: <b>[total_active]</b></div>
+                    <div class="investments__status">hoàn thành: <b>[total_completed]</b></div>
+                    <button @click="show_stat" type="button" class="investments__statistics-btn">Rút tiền</button>
+
+                    <label class="investments__switch switch" @click.prevent="change_filter">
+                        <input hidden type="checkbox" :checked="show_filter==='active'" checked>
+                        <span class="switch__variant _active">đầu tư tích cực</span>
+                        <span class="switch__toggle">
+                                  <i class="switch__toggle-ico">
+                                    <svg>
+                                      <use xlink:href="../static/img/svg/sprite.svg#ico-tick"></use>
+                                    </svg>
+                                  </i>
+                                </span>
+                        <span class="switch__variant _completed">hoàn thành</span>
+                    </label>
+                </div>
+                <div class="investments__cards-list">
+                    <div class="investments__cards-list-item" v-for="(dep , key) in list_deposit" v-show="filter(dep)">
+                        <div class="card-invest-info " :class="{'_completed' : now >= dep.date_end}">
+                            <div class="card-invest-info__ico">
+                                <i v-if="now < dep.date_end">
+                                    <svg>
+                                        <use xlink:href="../static/img/svg/sprite.svg#ico-invest"></use>
+                                    </svg>
+                                </i>
+                                <i v-else>
+                                    <svg>
+                                        <use xlink:href="../static/img/svg/sprite.svg#ico-tick-circle"></use>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="card-invest-info__label">đầu tư tích cực</div>
+                            <table class="card-invest-info__table">
+                                <tbody>
+                                <tr>
+                                    <td>ngày:</td>
+                                    <td>[get_date(dep.date)]</td>
+                                </tr>
+                                <tr>
+                                    <td>đầu tư:</td>
+                                    <td>[dep.amount] <b>TRX</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Trong 10 ngày:</td>
+                                    <td>[dep.amount * 2]<b>TRX</b></td>
+                                </tr>
+                                <tr>
+                                    <td>trả rồi:</td>
+                                    <td>[parseFloat(dep.amount_withdraw).toFixed(2)] <b>TRX</b></td>
+                                </tr>
+                                <tr>
+                                    <td>đếm ngược:</td>
+                                    <td style="font-family: FSElliotPro-Bold;">[dep.countdown]</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="card-invest-info__bottom">
+                                <template v-if="now < dep.date_end || dep.aviable >0.1">
+                                    <div class="card-invest-info__bottom-title">cổ tức có sẵn</div>
+                                    <div class="card-invest-info__bottom-val"  style="font-family: FSElliotPro-Bold;">[parseFloat(dep.aviable).toFixed(4)] <b>TRX</b></div>
+                                </template>
+                                <template v-else>
+                                    <div class="card-invest-info__bottom-title">paid out <b>200%</b> profit</div>
+                                    <div class="card-invest-info__bottom-val">[get_date(dep.date_end)]</div>
+                                </template>
+                                <div class="card-invest-info__steps">
+                                    <span :class="{'_active' : dep.count_day === 1}">1</span>
+                                    <span :class="{'_active' : dep.count_day === 2}">2</span>
+                                    <span :class="{'_active' : dep.count_day === 3}">3</span>
+                                    <span :class="{'_active' : dep.count_day === 4}">4</span>
+                                    <span :class="{'_active' : dep.count_day === 5}">5</span>
+                                    <span :class="{'_active' : dep.count_day === 6}">6</span>
+                                    <span :class="{'_active' : dep.count_day === 7}">7</span>
+                                    <span :class="{'_active' : dep.count_day === 8}">8</span>
+                                    <span :class="{'_active' : dep.count_day === 9}">9</span>
+                                    <span :class="{'_active' : dep.count_day === 10}">10</span>
+                                </div>
+                                <template v-if="now < dep.date_end || dep.aviable >0.1">
+                                    <button type="button" class="card-invest-info__btn" @click="withdrawal(dep.key)">
+                                        <span>rút tiền</span>
+                                        <svg>
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-arrows-down"></use>
+                                        </svg>
+                                    </button>
+                                </template>
+                                <template v-else>
+                                    <button type="button" class="card-invest-info__btn" @click="withdrawal(dep.key)">
+                                        <span>invest more</span>
+                                        <svg>
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-arrows-down"></use>
+                                        </svg>
+                                    </button>
+                                </template>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="investments__cards-list-item" v-if="list_deposit.length < 20">
+                        <div class="card-invest-new">
+
+                            <h3 class="card-invest-new__name">đầu tư và nhận</h3>
+                            <div class="card-invest-new__percent">200% trong 10 ngày</div>
+                            <label class="card-invest-from__input">
+                                <input type="number" v-model="amount" placeholder="Amount">
+                                <span class="card-invest-from__input-label">TRX</span>
+                            </label>
+                            <button type="button" class="card-invest-new__btn btn-big w100" @click="invest">
+                                <i class="btn-big__icon icon-round icon-round--invest"></i>
+                                <span class="btn-big__text">Đầu tư</span>
+                            </button>
+                            <table>
+                                <tr>
+                                    <td>Đầu tư tối thiểu:</td>
+                                    <td><b>10 TRX</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Đầu tư tối đa:</td>
+                                    <td><b>1000000 TRX</b></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="investments__cards-list-item" v-for="l in list_temp">
+                        <div class="card-invest-new card-invest-new--disable">
+                            <h3 class="futureh3">khoản đầu tư trong tương lai của bạn</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+<div class="united-sections">
+    <section class="referral container">
+        <div class="referral__inner container-inner-small">
+            <h2 class="investments__title">phần thưởng giới thiệu</h2>
+            <div class="referral__content">
+                <div class="referral__col-left">
+                    <div class="referral__link-copy" v-if="user">
+                        <div class="referral__link-copy-head">
+                            <i class="referral__link-copy-icon icon-round icon-round--user"></i>
+                            <h3 class="referral__link-copy-title">Liên kết giới thiệu của bạn:</h3>
+                        </div>
+
+                        <div class="referral__link-copy-value">[String('https://200tron.com/?referral='+user).substring(0, 45)]...</div>
+                        <input type="text" id="ref" :value="'https://200tron.com/?referral='+this.user" style="opacity: 0; height: 0;position: absolute; z-index: -1;" >
+                        <button type="button" class="referral__link-copy-btn" @click="copy">sao chép</button>
+                    </div>
+
+                    <button type="button" class="referral__promo-btn btn-big" @click="show_banner">
+                        <i class="btn-big__icon icon-round icon-round--promo"></i>
+                        <span class="btn-big__text">Công cụ quảng cáo</span>
+                    </button>
+                </div>
+
+                <div class="referral__col-right">
+                    <div class="referral__table" v-if="referal_stat.level1">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>1 level <b>(7%)</b></td>
+                                <td><b>[referal_stat.level1.count]</b> giới thiệu / <b>[parseFloat(referal_stat.level1.amount/1000000).toFixed(2)]</b> TRX</td>
+                            </tr>
+                            <tr>
+                                <td>2 level <b>(3%)</b></td>
+                                <td><b>[referal_stat.level2.count]</b> giới thiệu / <b>[parseFloat(referal_stat.level2.amount/1000000).toFixed(2)]</b> TRX</td>
+                            </tr>
+                            <tr>
+                                <td><b>toàn bộ:</b></td>
+                                <td><b>[referal_stat.level2.count + referal_stat.level1.count]</b> giới thiệu / <b>[parseFloat((referal_stat.level1.amount + referal_stat.level2.amount)/1000000).toFixed(2)]</b> TRX</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="referral__bottom">
+                        <div class="referral__bottom-col">
+                            <div class="referral__bottom-label">phần thưởng có sẵn:</div>
+                            <div class="referral__bottom-val"><b>[parseFloat(referral_money/1000000).toFixed(2)]</b> TRX</div>
+                        </div>
+                        <button type="button" class="referral__bottom-btn btn-big" @click="withdrawal_referal">
+                            <i class="btn-big__icon icon-round icon-round--download"></i>
+                            <span class="btn-big__text">rút tiền</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="referral__statistic-btn-wrap">
+                <button @click="get_referral_statistics" type="button" class="referral__statistic-btn">Thống kê phần thưởng giới thiệu</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-works container">
+        <div class="how-works__inner container-inner-small">
+            <h2 class="how-works__title">làm thế nào nó hoạt động</h2>
+            <div class="how-works__text text">
+                <p>200TRON là một nền tảng đầu tư hoàn toàn phi tập trung được xây dựng trên một hợp đồng thông minh trong mạng TRON.
+Hợp đồng thông minh là hợp đồng mở và có thể xác minh được, không thể bị hỏng hoặc giả mạo.
+Công nghệ chuỗi khối đảm bảo 100% tính công bằng và minh bạch của quỹ. 200TRON là cách thông minh nhất, đơn giản nhất để nhân tài sản của bạn lên chỉ trong vài ngày.</p>
+            </div>
+
+            <div class="how-works__steps-wrap">
+                <div class="how-works__steps-list">
+                    <div class="how-works__step">
+                        <div class="how-works__step-head">
+                            <i class="how-works__step-head-icon icon-round icon-round--pencil"></i>
+                            <h4 class="how-works__step-head-title">Ví tiền điện tử</h4>
+                            <span class="how-works__step-head-number">1</span>
+                        </div>
+                        <div class="how-works__step-text text">
+                            <p>Để bắt đầu đầu tư, người dùng phải đăng nhập vào ví tiền điện tử hỗ trợ Tron (TRX). Các ví Tron phổ biến nhất có nhiều người dùng nhất là TronLink, TronWallet.</p>
+                        </div>
+                    </div>
+                    <div class="how-works__step">
+                        <div class="how-works__step-head">
+                            <i class="how-works__step-head-icon icon-round icon-round--contract"></i>
+                            <h4 class="how-works__step-head-title">Hợp đồng thông minh</h4>
+                            <span class="how-works__step-head-number">2</span>
+                        </div>
+                        <div class="how-works__step-text text">
+                            <p>Hợp đồng thông minh 200TRON tạo ra 20% số tiền đầu tư hàng ngày và đảm bảo lợi nhuận cuối cùng là 200 % trong 10 ngày.</p>
+                        </div>
+                    </div>
+                    <div class="how-works__step">
+                        <div class="how-works__step-head">
+                            <i class="how-works__step-head-icon icon-round icon-round--profit"></i>
+                            <h4 class="how-works__step-head-title">Lợi nhuận đầu tư</h4>
+                            <span class="how-works__step-head-number">3</span>
+                        </div>
+                        <div class="how-works__step-text text">
+                            <p>Lợi nhuận (cổ tức) được tích lũy vào tài khoản của bạn hàng ngày và theo thời gian thực. Bạn có thể rút cổ tức bất kỳ lúc nào.</p>
+                        </div>
+                    </div>
+                    <div class="how-works__step">
+                        <div class="how-works__step-head">
+                            <i class="how-works__step-head-icon icon-round icon-round--referal"></i>
+                            <h4 class="how-works__step-head-title">Phần thưởng giới thiệu</h4>
+                            <span class="how-works__step-head-number">4</span>
+                        </div>
+                        <div class="how-works__step-text text">
+                            <p>Mỗi nhà đầu tư đều cung cấp một liên kết giới thiệu được tạo và các công cụ quảng cáo để thu hút người dùng mới đến 200TRON. Chương trình giới thiệu hai cấp cho phép kiếm 7 % + 3 % từ các nhà đầu tư được mời.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="how-works__slogan">200TRON - STRIKE IT RICH</h3>
+        </div>
+    </section>
+
+</div>
+    </main>
+    
+
+<footer class="footer container">
+    <div class="footer__inner container-inner-small">
+        <a href="#" class="footer__logo">
+            <img src="../static/img/logo.png"
+                 alt="logo">
+        </a>
+
+        <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+                <a href="#" data-modal-open="faq" class="header__menu-link">FAQ</a>
+            </li>
+            <li class="footer__menu-item">
+                <a href="#" @click.prevent="scroll_to_how" class="footer__menu-link">Làm thế nào nó hoạt động</a>
+            </li>
+            <li class="footer__menu-item">
+                <a href="#" data-modal-open="partners" class="footer__menu-link">giới thiệu</a>
+            </li>
+            <li class="footer__menu-item">
+                <a href="https://tronscan.org/#/contract/THt48vA9L8BiC3SdwNXMt7q4bWk2s2UWjm" target="_blank" class="footer__menu-link">Hợp đồng</a>
+            </li>
+        </ul>
+
+        <div class="footer__nav-bar">
+            <div class="footer__nav-bar-item socials">
+                <div class="socials__inner">
+                    <a href="https://t.me/tron_200" target="_blank" class="socials__item">
+                       <img src="../static/img/svg/telegram.svg" style="margin-left: -.1rem" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__nav-bar-item lang-select" data-modal-open="lang">
+                <a href="#" class="lang-select__btn">
+                    <img src="../static/img/flags/vi.png" alt="vi">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<div class="modal" data-modal="partners">
+    <div class="modal__scroll">
+        <div class="modal__wrap">
+            <button type="button"
+                    class="modal__close-btn"
+                    data-modal-close>
+                <svg>
+                    <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal-partners">
+                <div class="modal__inner-scroll"
+                     data-scrollbar>
+                    <div class="modal__inner-scroll-content">
+                        <h2 class="modal__title modal-partners__title">phần thưởng giới thiệu</h2>
+                        <div class="modal-partners__text text">
+                            <p>Phần thưởng giới thiệu 200TRON bao gồm việc tích lũy thu nhập bổ sung cho người dùng để thu hút các nhà đầu tư mới vào quỹ.
+Các nhà đầu tư mới đã tham gia 200TRON bằng liên kết giới thiệu của bạn sẽ trở thành người được giới thiệu cấp 1 của bạn.
+Tất cả những người được mời vào quỹ nhờ giới thiệu cấp 1 của bạn trở thành
+giới thiệu cấp 2 của bạn và cũng mang lại cho bạn lợi nhuận bổ sung.</p>
+                        </div>
+
+                        <div class="modal-partners__percents">
+                            <div class="modal-partners__percents-item">
+                                <b class="text-gradient-blue">7%</b>
+                                <span>Phần thưởng giới thiệu cấp 1</span>
+                            </div>
+                            <div class="modal-partners__percents-item">
+                                <b class="text-gradient-green">3%</b>
+                                <span>Phần thưởng giới thiệu cấp 2</span>
+                            </div>
+                        </div>
+                        <h4 class="modal-partners__note">Phần thưởng giới thiệu được ghi có bằng TRX vào tài khoản của bạn. Bạn có thể rút tiền về ví của mình bất cứ lúc nào.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" data-modal="auth">
+    <div class="modal__scroll">
+        <div class="modal__wrap">
+            <button type="button" class="modal__close-btn" data-modal-close>
+                <svg>
+                    <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal-auth">
+                <h2 class="modal__title modal-auth__title">LOG IN</h2>
+                <div class="modal-auth__text text">
+                    <p>Vui lòng đăng nhập vào ví TRON của bạn. Nếu bạn chưa cài đặt
+Tiện ích mở rộng trình duyệt TronLink hoặc ứng dụng TronWallet để tương tác với trang web, bạn có thể tải về tại đây
+                    </p>
+                    <div class="modal-auth__btn-wrap">
+                        <a href="https://www.tronlink.org/" target="_blank" class="modal-auth__btn btn-big">
+                            <i class="btn-big__icon icon-round icon-round--invest-green"></i>
+                            <span class="btn-big__text">Tron Link</span>
+                        </a>
+                    </div>
+                    <br>
+                    <div class="modal-auth__btn-wrap">
+                        <a href="https://www.tronwallet.me/" target="_blank" class="modal-auth__btn btn-big">
+                            <i class="btn-big__icon icon-round icon-round--invest-green"></i>
+                            <span class="btn-big__text">Tronwallet</span>
+                        </a>
+                    </div>
+
+                    <p>Đảm bảo rằng bạn đang ở trên mạng mainnet, không sử dụng mạng thử nghiệm.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal" data-modal="lang">
+    <div class="modal__scroll">
+        <div class="modal__wrap">
+            <button type="button" class="modal__close-btn" data-modal-close>
+                <svg>
+                    <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal-lang">
+                <div class="modal-lang__list">
+                    <a href="../ru/index.html" class="modal-lang__item">
+                        <div class="modal-lang__item-img-wrap">
+                            <div class="modal-lang__item-img not-active">
+                                <img src="../static/img/flags/ru.png" alt="ru">
+                            </div>
+                            <div class="modal-lang__item-img active">
+                                <img src="../static/img/flags/ru.png" alt="ru">
+                            </div>
+                        </div>
+                        <div class="modal-lang__item-name">Русский</div>
+                    </a>
+                    <a href="../index.html" class="modal-lang__item">
+                        <div class="modal-lang__item-img-wrap">
+                            <div class="modal-lang__item-img not-active">
+                                <img src="../static/img/flags/en.png" alt="ru">
+                            </div>
+                            <div class="modal-lang__item-img active">
+                                <img src="../static/img/flags/en.png" alt="ru">
+                            </div>
+                        </div>
+                        <div class="modal-lang__item-name">English</div>
+                    </a>
+                    <a href="../id/index.html" class="modal-lang__item">
+                        <div class="modal-lang__item-img-wrap">
+                            <div class="modal-lang__item-img not-active">
+                                <img src="../static/img/flags/id.png" alt="id">
+                            </div>
+                            <div class="modal-lang__item-img active">
+                                <img src="../static/img/flags/id.png" alt="id">
+                            </div>
+                        </div>
+                        <div class="modal-lang__item-name">Bahasa Indonesia</div>
+                    </a>
+                    <a href="index.html" class="modal-lang__item">
+                        <div class="modal-lang__item-img-wrap">
+                            <div class="modal-lang__item-img not-active">
+                                <img src="../static/img/flags/vi.png" alt="ru">
+                            </div>
+                            <div class="modal-lang__item-img active">
+                                <img src="../static/img/flags/vi.png" alt="ru">
+                            </div>
+                        </div>
+                        <div class="modal-lang__item-name">tiếng Việt</div>
+                    </a>
+                    <a href="#" class="modal-lang__item modal-lang__item--disable">
+                        <div class="modal-lang__item-img-wrap">
+                            <div class="modal-lang__item-img not-active">
+                                <img src="../static/img/flags/de.png" alt="ru">
+                            </div>
+                            <div class="modal-lang__item-img active">
+                                <img src="../static/img/flags/de.png" alt="ru">
+                            </div>
+                        </div>
+                        <div class="modal-lang__item-name">Deutsch</div>
+                    </a>
+                    <a href="#" class="modal-lang__item modal-lang__item--disable">
+                        <div class="modal-lang__item-img-wrap">
+                            <div class="modal-lang__item-img not-active">
+                                <img src="../static/img/flags/ja.png" alt="ru">
+                            </div>
+                            <div class="modal-lang__item-img active">
+                                <img src="../static/img/flags/ja.png" alt="ru">
+                            </div>
+                        </div>
+                        <div class="modal-lang__item-name">Nihongo</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="modal" data-modal="ref-stats">
+    <div class="modal__scroll">
+        <div class="modal__wrap">
+            <button type="button"
+                    class="modal__close-btn"
+                    data-modal-close>
+                <svg>
+                    <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal-ref-stats">
+                <div class="modal__inner-scroll"
+                     data-scrollbar>
+                    <div class="modal__inner-scroll-content">
+                        <h4 class="modal__title modal-ref-stats__title">thống kê phần thưởng giới thiệu</h4>
+
+                        <ul class="modal-ref-stats__list">
+                            <li class="modal-ref-stats__item" v-for="ref in referral_statistics">
+                                <div class="modal-ref-stats__item-inner">
+                                    <div class="modal-ref-stats__item-col">
+                                        <div class="modal-ref-stats__item-label">
+                                            <span>[ref.level] level:</span>
+                                        </div>
+                                        <span class="modal-ref-stats__item-val"><b>[short_user(ref.user)]</b></span>
+                                    </div>
+                                    <div class="modal-ref-stats__item-col">
+                                        <div class="modal-ref-stats__item-label">
+                                            <span>tích lũy:</span>
+                                        </div>
+                                        <span class="modal-ref-stats__item-val"><b>[parseFloat(ref.amount/1000000).toFixed(2)]</b>  TRX</span>
+                                    </div>
+                                    <div class="modal-ref-stats__item-col">
+
+                                        <div class="modal-ref-stats__item-label">
+                                            <svg>
+                                                <use xlink:href="img/svg/sprite.html#ico-clock"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="modal-ref-stats__item-val"><b>[ref.date]</b></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" data-modal="stats">
+    <div class="modal__scroll">
+        <div class="modal__wrap">
+            <button type="button"
+                    class="modal__close-btn"
+                    data-modal-close>
+                <svg>
+                    <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal-stats">
+                <div class="modal__inner-scroll"
+                     data-scrollbar>
+                    <div class="modal__inner-scroll-content">
+                        <div class="modal-stats__head">
+                            <h4 class="modal__title modal-stats__title">Rút tiền</h4>
+                            <div class="modal-stats__wallet">
+                                <svg>
+                                    <use xlink:href="img/svg/sprite.html#ico-wallet"></use>
+                                </svg>
+                                <span>[user_login]</span>
+                            </div>
+
+                            <!--for open add class '_active'-->
+                        </div>
+
+                        <ul class="modal-stats__list">
+                            <li class="modal-stats__item" v-for="(w , key) in withdraw_all">
+                                <div class="modal-stats__item-number">[key+1].</div>
+                                <div class="modal-stats__item-col">
+                                    <div class="modal-stats__item-label">
+                                        <svg>
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-invest"></use>
+                                        </svg>
+                                        <span>số tiền:</span>
+                                    </div>
+                                    <span class="modal-stats__item-val"><b>[parseFloat(w.amount/1000000).toFixed(2)]</b>  TRX</span>
+                                </div>
+                                <div class="modal-stats__item-col">
+
+                                    <div class="modal-stats__item-label">
+                                        <svg>
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-clock"></use>
+                                        </svg>
+                                        <span>ngày:</span>
+                                    </div>
+                                    <span class="modal-stats__item-val"><b>[w.date]</b></span>
+                                </div>
+
+                                <div class="modal-stats__item-status _done">
+                                    <svg>
+                                        <use xlink:href="../static/img/svg/sprite.svg#ico-tick-2"></use>
+                                    </svg>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modal="calc">
+    <div class="modal__scroll">
+        <div class="modal__wrap">
+            <button type="button"
+                    class="modal__close-btn"
+                    data-modal-close>
+                <svg>
+                    <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal-calc">
+                <div class="modal__inner-scroll"
+                     data-scrollbar>
+                    <div class="modal__inner-scroll-content">
+                        <div class="modal-calc__content">
+                            <div class="modal-calc__form">
+                                <h3 style="color: #5DB098">MÁY TÍNH</h3>
+                                <svg class="modal-calc__form-ico">
+                                    <use xlink:href="../static/img/svg/sprite.svg#ico-invest"></use>
+                                </svg>
+                                <div class="modal-calc__form-label">Nhập số tiền đầu tư</div>
+                                <label class="modal-calc__input">
+                                    <input type="number" v-model="calc_amount" placeholder="Amount">
+                                    <span class="modal-calc__input-label">TRX</span>
+                                </label>
+                                <table class="calc-table">
+                                    <tr>
+                                        <td>Đầu tư tối thiểu:</td>
+                                        <td><b>10 TRX</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Đầu tư tối đa:</td>
+                                        <td><b>1000000 TRX</b></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="modal-calc__results">
+                                <table class="modal-calc__results-table">
+                                    <tbody>
+                                    <tr>
+                                        <td>Tổng cộng:</td>
+                                        <td><b>[parseFloat(calc_amount * 2).toFixed(2)]</b> TRX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bắt đầu lại từ đầu:</td>
+                                        <td><b>200</b> %</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thời hạn đầu tư:</td>
+                                        <td><b>10</b> ngày</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+
+                                <h4 class="modal-calc__counters-label"><span>Lợi tức được tính toán</span></h4>
+                                <div class="modal-calc__counters">
+                                    <table class="modal-calc__counter-table" style="margin: 0 auto;">
+                                        <tbody>
+                                        <tr>
+                                            <td>trên giờ:</td>
+                                            <td>[parseFloat(per_hour).toFixed(2)] TRX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>trong 12 giờ:</td>
+                                            <td>[parseFloat(per_hour*12).toFixed(2)] TRX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>mỗi ngày:</td>
+                                            <td>[parseFloat(per_hour*24).toFixed(2)] TRX</td>
+                                        </tr>
+                                        <tr>
+                                            <td>trong 10 ngày:</td>
+                                            <td>[parseFloat(per_hour*24*10).toFixed(2)] TRX</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modal="promo">
+    <div class="modal__scroll">
+        <div class="modal__wrap">
+            <button type="button"
+                    class="modal__close-btn"
+                    data-modal-close>
+                <svg>
+                    <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal-promo">
+                <div class="modal__inner-scroll"
+                     data-scrollbar>
+                    <div class="modal__inner-scroll-content">
+                        <div class="modal-promo__head">
+                            <h4 class="modal__title modal-promo__title">tài liệu quảng cáo</h4>
+                            <div class="modal-promo__tabs-buttons">
+                                <button type="button" class="modal-promo__tab-btn _active" @click="select_banner = 0">125 x 125</button>
+                                <button type="button" class="modal-promo__tab-btn" @click="select_banner = 1">240 x 400</button>
+                                <button type="button" class="modal-promo__tab-btn" @click="select_banner = 2">300 x 300</button>
+                                <button type="button" class="modal-promo__tab-btn" @click="select_banner = 3">468 x 60</button>
+                                <button type="button" class="modal-promo__tab-btn " @click="select_banner = 4">728 x 90</button>
+                            </div>
+                        </div>
+
+                        <div class="modal-promo__tabs-wrap">
+                            <div class="modal-promo__tab-item">
+                                <div class="modal-promo__promo-img">
+                                    <a href="#">
+                                        <img :src="get_banner.img"/>
+                                    </a>
+                                </div>
+                                <h4 class="modal-promo__tab-item-title">Liên kết của bạn đến biểu ngữ [get_banner.size]</h4>
+
+                                <div class="modal-promo__code-wrap">
+                                    <input id="ref_banner" type="text" v-model='copy_banner_text' style="position: absolute; opacity: 0;z-index: -111;">
+                                    <code class="modal-promo__code">
+                                        &lt;a&nbsp;href="https://200tron.com/?referal=[user]"&gt;<br>
+                                        &nbsp;&lt;img src="https://200tron.com[get_banner.img]"/&gt;<br>
+                                        &lt;/a&gt;
+                                    </code>
+                                    <button type="button" class="modal-promo__copy-btn" @click="copy2">
+                                        <svg>
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-copy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" data-modal="faq">
+    <div class="modal__scroll">
+        <div class="modal__wrap">
+            <button type="button"
+                    class="modal__close-btn"
+                    data-modal-close>
+                <svg>
+                    <use xlink:href="../static/img/svg/sprite.svg#ico-close"></use>
+                </svg>
+            </button>
+            <div class="modal__content modal-faq">
+                <div class="modal__inner-scroll"
+                     data-scrollbar>
+                    <div class="modal__inner-scroll-content">
+                        <h2 class="modal__title modal-faq__title">FAQ</h2>
+                        <ul class="modal-faq__list" data-accordion>
+                            <li class="modal-faq__item" data-accordion-item>
+                                <div class="modal-faq__item-head" data-accordion-item-trigger>
+                                    <div class="modal-faq__item-ico">
+                                        <svg class="plus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-plus"></use>
+                                        </svg>
+                                        <svg class="minus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-minus"></use>
+                                        </svg>
+                                    </div>
+
+                                    <h3 class="modal-faq__item-head-title">Bắt đầu đầu tư như thế nào?</h3>
+                                </div>
+                                <div class="modal-faq__item-content" data-accordion-item-content>
+                                    <div class="modal-faq__item-content-inner">
+                                        <div class="modal-faq__item-text text">
+                                            <p>Để bắt đầu đầu tư vào 200TRON, bạn sẽ cần tạo một ví tiền điện tử hỗ trợ Tron (TRX)
+bằng cách cài đặt ứng dụng hoặc tiện ích mở rộng trình duyệt cần thiết. Chúng tôi khuyên bạn nên cài đặt các ví tiền điện tử phổ biến nhất cho
+Tron (TRX) như TronLink, TronWallet hoặc bất kỳ tiện ích nào cho bạn. Sau khi tạo ví, hãy mua một số TRX để bắt đầu đầu tư vào 200TRON.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="modal-faq__item" data-accordion-item>
+                                <div class="modal-faq__item-head" data-accordion-item-trigger>
+                                    <div class="modal-faq__item-ico">
+                                        <svg class="plus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-plus"></use>
+                                        </svg>
+                                        <svg class="minus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-minus"></use>
+                                        </svg>
+                                    </div>
+
+                                    <h3 class="modal-faq__item-head-title">Đầu tư vào máy tính để bàn như thế nào?</h3>
+                                </div>
+                                <div class="modal-faq__item-content" data-accordion-item-content>
+                                    <div class="modal-faq__item-content-inner">
+                                        <div class="modal-faq__item-text text">
+                                            <p>TronLink: Cài đặt tiện ích mở rộng ví Tronlink từ cửa hàng Chrome trực tuyến
+. Mở tiện ích mở rộng Tronlink đã cài đặt và thiết lập ví của bạn. Mở trình duyệt Chrome và truy cập trang web 200TRON.com,
+sau khi đăng nhập vào ví TronLink, bạn sẽ được tự động đăng nhập vào 200TRON. Gửi một số TRX vào số dư ví của bạn.
+Bây giờ bạn có thể bắt đầu kế hoạch đầu tư 200 % trong phần Đầu tư.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="modal-faq__item" data-accordion-item>
+                                <div class="modal-faq__item-head" data-accordion-item-trigger>
+                                    <div class="modal-faq__item-ico">
+                                        <svg class="plus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-plus"></use>
+                                        </svg>
+                                        <svg class="minus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-minus"></use>
+                                        </svg>
+                                    </div>
+
+                                    <h3 class="modal-faq__item-head-title">Đầu tư trên thiết bị di động như thế nào?</h3>
+                                </div>
+                                <div class="modal-faq__item-content" data-accordion-item-content>
+                                    <div class="modal-faq__item-content-inner">
+                                        <div class="modal-faq__item-text text">
+                                            <p>TronLink: Tải xuống ứng dụng TronLink từ trang web chính thức https://www.tronlink.org/ hoặc Google Play hoặc App Store. Tạo và thiết lập ví của bạn và nạp tiền vào số dư của bạn. Nhấp vào Khám phá trên trang chủ ứng dụng và nhập 200TRON.com vào tìm kiếm DAPP
+và chọn nó.
+Khi trang web 200TRON mở ra, hãy chuyển đến phần Đầu tư và bắt đầu kế hoạch đầu tư.
+TronWallet: Cài đặt ứng dụng TronWallet trong Google Play hoặc App Store, khởi chạy ứng dụng và tạo ví. Sau khi thiết lập ví và nạp lại số dư bằng TRX, hãy nhấp vào biểu tượng trình duyệt và tìm kiếm 200TRON.com trong hộp tìm kiếm. Mở trang web 200TRON và
+nhập số tiền đầu tư mong muốn vào phần Đầu tư, nhấp vào Đầu tư ngay.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="modal-faq__item" data-accordion-item>
+                                <div class="modal-faq__item-head" data-accordion-item-trigger>
+                                    <div class="modal-faq__item-ico">
+                                        <svg class="plus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-plus"></use>
+                                        </svg>
+                                        <svg class="minus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-minus"></use>
+                                        </svg>
+                                    </div>
+
+                                    <h3 class="modal-faq__item-head-title">Tôi có thể rút cổ tức bao lâu một lần?</h3>
+                                </div>
+                                <div class="modal-faq__item-content" data-accordion-item-content>
+                                    <div class="modal-faq__item-content-inner">
+                                        <div class="modal-faq__item-text text">
+                                            <p>Bạn có thể rút tiền lãi cổ phần bất kỳ lúc nào bằng cách nhấp vào nút Rút tiền.
+Xin lưu ý rằng phí giao dịch tối đa 3 TRX sẽ được áp dụng cho mọi yêu cầu.
+Cổ tức sẽ chỉ được trả thông qua hợp đồng thông minh vào ví mà khoản đầu tư được thực hiện.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="modal-faq__item" data-accordion-item>
+                                <div class="modal-faq__item-head" data-accordion-item-trigger>
+                                    <div class="modal-faq__item-ico">
+                                        <svg class="plus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-plus"></use>
+                                        </svg>
+                                        <svg class="minus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-minus"></use>
+                                        </svg>
+                                    </div>
+
+                                    <h3 class="modal-faq__item-head-title">Thời hạn kế hoạch đầu tư là gì?</h3>
+                                </div>
+                                <div class="modal-faq__item-content" data-accordion-item-content>
+                                    <div class="modal-faq__item-content-inner">
+                                        <div class="modal-faq__item-text text">
+                                            <p>Thời hạn kế hoạch đầu tư là 10 ngày với lợi tức 200 %. Sau đó, kế hoạch đầu tư sẽ tự động hoàn thành.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="modal-faq__item" data-accordion-item>
+                                <div class="modal-faq__item-head" data-accordion-item-trigger>
+                                    <div class="modal-faq__item-ico">
+                                        <svg class="plus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-plus"></use>
+                                        </svg>
+                                        <svg class="minus">
+                                            <use xlink:href="../static/img/svg/sprite.svg#ico-minus"></use>
+                                        </svg>
+                                    </div>
+
+                                    <h3 class="modal-faq__item-head-title">Nó có an toàn không?</h3>
+                                </div>
+                                <div class="modal-faq__item-content" data-accordion-item-content>
+                                    <div class="modal-faq__item-content-inner">
+                                        <div class="modal-faq__item-text text">
+                                            <p>200TRON là một nền tảng phi tập trung 100% hoạt động độc quyền trên hợp đồng thông minh của mạng TRON. Thuật toán thanh toán và cộng dồn hoàn toàn tự động và không chịu ảnh hưởng bên ngoài. Công nghệ chuỗi khối đảm bảo sự công bằng 100 % và
+sự minh bạch của
+quỹ. Nhưng hãy luôn nhớ mọi quy tắc của nhà đầu tư: không bao giờ mạo hiểm nhiều hơn mức bạn có thể để mất.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<script src="../static/js/libs3860.js?v=1"></script>
+<script src="../static/js/mainae52.js?v=5"></script>
+
+
+<script src="../static/js/coundown4c33.js?v=32"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<style>
+    .swiper-wrapper {
+        width: 54.4rem;
+        position: relative;
+    }
+
+    .first-block__image2:not(.swiper-slide-active) {
+        opacity: 0 !important;
+    }
+</style>
+<script>
+
+    function initSlider() {
+
+        new Swiper('.swiper-container', {
+            // loop: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+        })
+
+
+    }
+
+    TRONGRID_API2 = "https://api.trongrid.io/";
+    let VueTRON = {
+        data() {
+            return {
+                tronWeb: {
+                    loggedIn: false
+                }
+            };
+        },
+        async created() {
+            await new Promise(resolve => {
+                const tronWebState = {
+                    installed: !!window.tronWeb,
+                    loggedIn: window.tronWeb && window.tronWeb.ready
+                };
+
+                if (tronWebState.installed) {
+                    this.tronWeb = tronWebState;
+                    return resolve();
+                }
+
+                let tries = 0;
+
+                const timer = setInterval(() => {
+                    if (tries >= 10) {
+                        const TRONGRID_API = TRONGRID_API2;
+
+                        window.tronWeb = new TronWeb(
+                            TRONGRID_API,
+                            TRONGRID_API,
+                            TRONGRID_API
+                        );
+
+
+                        this.tronWeb = {
+                            installed: false,
+                            loggedIn: false
+                        }
+
+
+                        clearInterval(timer);
+                        return resolve();
+                    }
+
+                    tronWebState.installed = !!window.tronWeb;
+                    tronWebState.loggedIn = window.tronWeb && window.tronWeb.ready;
+
+                    if (!tronWebState.installed)
+                        return tries++;
+
+                    this.tronWeb = tronWebState;
+
+                    resolve();
+                }, 1000);
+            });
+
+            if (!this.tronWeb.loggedIn) {
+
+                window.tronWeb.on('addressChanged', async () => {
+                    if (this.tronWeb.loggedIn)
+                        return;
+                    this.tronWeb = {
+                        installed: true,
+                        loggedIn: true
+                    }
+                });
+            }
+
+        },
+        methods: {
+            getTronWeb() {
+                return new Promise((resolve, reject) => {
+                    window.tronWeb ? resolve(window.tronWeb) : reject('TronWeb not found');
+                });
+            }
+        }
+    };
+    window.App = new Vue({
+        mixins: [VueTRON],
+        el: '.page',
+        delimiters: ['[', ']'],
+        data() {
+            return {
+                app: false,
+                
+                contract_address: 'THt48vA9L8BiC3SdwNXMt7q4bWk2s2UWjm',
+                upline: [],
+                deposit: [],
+                withdraw_all: [],
+                referral_statistics: [],
+                user: '',
+                amount: 10,
+                calc_amount: 10,
+                all_total_invested: 0,
+                show_filter: 'active',
+                now: new Date().getTime(),
+                referral_money: 0,
+                referal_stat: {},
+                timeout: false,
+                list_banners: [
+                    {size: '125x125', img: '/static/banners/tron-125x125.gif'},
+                    {size: '240x400', img: '/static/banners/tron-240x400.gif'},
+                    {size: '300x300', img: '/static/banners/tron-300x300.gif'},
+                    {size: '468x60', img: '/static/banners/tron-468x60.gif'},
+                    {size: '728x90', img: '/static/banners/tron-728x90.gif'},
+                ],
+                select_banner: 0,
+            }
+        },
+        computed: {
+            copy_banner_text() {
+                return `<a href="../index71f6.html?referal=${this.user}"><img src="https://200tron.com${this.get_banner.img}/"/></a>`;
+            },
+            get_banner() {
+                return this.list_banners[this.select_banner];
+            },
+            per_hour() {
+                return (this.calc_amount * 2 / 864000) * 3600
+            },
+            user_login() {
+                return String(this.user).substring(0, 4) + '.....' + String(this.user).substring(this.user.length - 4, this.user.length)
+            },
+            list_temp() {
+                try {
+                    return Array(2 - this.list_deposit.length)
+                } catch (e) {
+                    return Array(0)
+                }
+            },
+            list_deposit() {
+                return this.deposit.sort((a, b) => {
+                    return a.date - b.date;
+                })
+            },
+            total_invested() {
+                return this.deposit.reduce((accumulator, currentValue) => {
+                    return accumulator + currentValue.amount
+                }, 0)
+            },
+            total_paid() {
+                return this.deposit.reduce((accumulator, currentValue) => {
+                    return accumulator + currentValue.amount_withdraw
+                }, 0)
+            },
+            total_active() {
+                return this.deposit.filter(dep => dep.date_withdraw < dep.date_end).length
+            },
+            total_completed() {
+                return this.deposit.filter(dep => dep.date_withdraw >= dep.date_end).length
+            }
+        },
+        methods: {
+            short_user(user) {
+                return String(user).substring(0, 4) + '.....' + String(user).substring(user.length - 4, user.length)
+            },
+            scroll_to() {
+                document.querySelector('.investments__title').scrollIntoView({
+                    block: "start",
+                    behavior: "smooth"
+                });
+            },
+            scroll_to_how() {
+                document.querySelector('.how-works').scrollIntoView({
+                    block: "start",
+                    behavior: "smooth"
+                });
+            },
+            show_banner() {
+                if (!this.user) {
+                    return openModal('auth');
+                }
+                openModal('promo');
+            },
+
+            show_stat() {
+                openModal('stats');
+                this.get_withdraw();
+            },
+            copy() {
+                var copyText = document.getElementById("ref");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy");
+                alert("Copied");
+            },
+            copy2() {
+                var copyText = document.getElementById("ref_banner");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy");
+                alert("Copied");
+            },
+            get_amount_ref(amount, level) {
+                if (level === 1) {
+                    return amount / 1000000 * 7
+                }
+                return amount / 1000000 * 3
+            },
+            change_filter() {
+                let t = this.show_filter === 'active' ? 'deactive' : 'active';
+                this.show_filter = t;
+            },
+            get_count_day(day) {
+                console.log(this.now, 'now')
+                console.log(((this.now) - day) / 86400, 'day')
+                return parseInt(((this.now) - day) / 86400);
+            },
+            filter(dep) {
+                if (this.show_filter === 'active') {
+                    return dep.date_withdraw < dep.date_end;
+                } else {
+                    return dep.date_withdraw >= dep.date_end;
+                }
+
+            },
+            withdrawal(key) {
+                if (!this.user) {
+                    return openModal('auth');
+                }
+                this.app.withdraw(key).send().then((data) => {
+                    setTimeout(() => {
+                        location.reload();
+                    }, 2000)
+                }).then((e) => {
+
+                })
+            },
+
+            withdrawal_referal(key) {
+                if (!this.user) {
+                    return openModal('auth');
+                }
+                this.app.withdrawReferral().send().then((data) => {
+                    setTimeout(() => {
+                        location.reload();
+                    }, 1500)
+                }).then((e) => {
+
+                })
+            },
+            get_date(timestamp) {
+                var d = new Date(timestamp * 1000), // Convert the passed timestamp to milliseconds
+                    yyyy = d.getFullYear(),
+                    mm = ('0' + (d.getMonth() + 1)).slice(-2),  // Months are zero based. Add leading 0.
+                    dd = ('0' + d.getDate()).slice(-2),         // Add leading 0.
+                    hh = d.getHours(),
+                    h = hh,
+                    min = ('0' + d.getMinutes()).slice(-2),     // Add leading 0.
+                    ampm = 'AM',
+                    time;
+
+                if (hh > 12) {
+                    h = hh - 12;
+                    ampm = 'PM';
+                } else if (hh === 12) {
+                    h = 12;
+                    ampm = 'PM';
+                } else if (hh == 0) {
+                    h = 12;
+                }
+
+                // ie: 2014-03-24, 3:00 PM
+                time = dd + '.' + mm + '.' + yyyy
+                return time;
+            },
+            invest() {
+                if (!this.user) {
+                    return openModal('auth');
+                }
+                this.app.bet(this.upline).send({callValue: tronWeb.toSun(this.amount),}).then((data) => {
+                    setTimeout(() => {
+                        location.reload();
+                    }, 3000)
+                })
+
+            },
+            get_withdraw() {
+                if (!this.user) {
+                    return openModal('auth');
+                }
+                fetch(`/get_withdraw?user=${this.user}`).then(response => response.json()).then((data) => {
+                    this.withdraw_all = data;
+                })
+            },
+            get_referral_statistics() {
+                if (!this.user) {
+                    return openModal('auth');
+                }
+                openModal('ref-stats');
+                fetch(`/get_referral_statistics?user=${this.user}`).then(response => response.json()).then((data) => {
+                    this.referral_statistics = data;
+                })
+            },
+
+            parse_hex: function (value, k = false) {
+                var v = parseInt(value, 16);
+                if (k) {
+                    return v / 1000000;
+                }
+                return v;
+            },
+            get_referal_stat() {
+                fetch('/referal_stat?referal=' + this.user).then(data => data.json()).then((data) => {
+                    this.referal_stat = data;
+                })
+            },
+
+            async getDeposit() {
+                let amount_deposit = await this.app.getAmountDeposit(window.tronWeb.defaultAddress.hex).call()
+                this.deposit = [];
+                for (let i = 0; i < parseInt(tronWeb.fromSun(amount_deposit * 1000000)); i++) {
+                    let deposit = await this.app.ListDeposit(window.tronWeb.defaultAddress.hex, i).call()
+                    console.log(parseFloat(deposit.amount_withdraw))
+                    this.deposit.push({
+                        amount: parseFloat(tronWeb.fromSun(deposit.amount)),
+                        amount_withdraw: parseFloat(tronWeb.fromSun(deposit.amount_withdraw)),
+                        date: this.parse_hex(deposit.date._hex),
+                        date_end: this.parse_hex(deposit.date_end._hex),
+                        date_withdraw: this.parse_hex(deposit.date_withdraw._hex),
+                        countdown: countdown(parseInt(deposit.date_end._hex)),
+                        aviable: 0,
+                        key: i,
+                        count_day: this.get_count_day(parseFloat(deposit.date))
+                    })
+                }
+            },
+            async get_total_invested() {
+                this.all_total_invested = await this.app.total_invested().call()
+            }
+
+        },
+        watch: {
+            async 'tronWeb.loggedIn'() {
+                clearTimeout(this.timeout)
+                this.timeout = setTimeout(async () => {
+                    this.user = window.tronWeb.defaultAddress.base58;
+                    this.app = await window.tronWeb.contract().at(this.contract_address);
+                    this.now = parseInt(await this.app.get_now().call())
+
+                    await this.getDeposit();
+                    this.referral_money = parseFloat(await this.app.ReferralMoney(this.user).call());
+                    await this.get_total_invested();
+                    this.get_referal_stat();
+
+                    if (this.user && this.user !== '') {
+                        fetch('register', {
+                            method: "POST",
+                            headers: {
+                                "X-Requested-With": "XMLHttpRequest"
+                            },
+                            body: JSON.stringify({user: this.user})
+                        })
+                            .then((response) => {
+                                return response.json();
+                            })
+                            .then((data) => {
+                                if (data.result === 'success') {
+                                    this.upline = data.data;
+                                }
+                            });
+                    }
+                }, 300)
+
+            }
+        },
+        mounted() {
+
+            setInterval(() => {
+                this.deposit.forEach((e) => {
+                    if (this.now >= e.date_end) {
+                        e.countdown = '--:--:--'
+                    } else {
+                        e.countdown = countdown(e.date_end, this.now);
+                    }
+
+                    e.aviable = aviable(e.date_withdraw, e.date_end, e.amount, this.now)
+                })
+                this.now += 1;
+            }, 1000)
+
+
+            initSlider();
+        }
+    })
+
+</script>
+</body>
+
+<!-- Mirrored from 200tron.com/vi/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 08 Aug 2020 10:39:36 GMT -->
+</html>
